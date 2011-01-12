@@ -3,7 +3,7 @@ use strict;
 use warnings;
 our $VERSION = '0.01';
 
-sub IO::Handle::fprintf (*$;@) {
+sub IO::Handle::fprintf {
     my($fh, $fmt, @args) = @_;
     print $fh sprintf $fmt, @args;
 }
