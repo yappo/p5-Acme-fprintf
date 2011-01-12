@@ -2,11 +2,8 @@ package Acme::fprintf;
 use strict;
 use warnings;
 our $VERSION = '0.01';
-our @ISA = 'Exporter';
-our @EXPORT = 'fprintf';
 
-
-sub fprintf (*$;@) {
+sub IO::Handle::fprintf (*$;@) {
     my($fh, $fmt, @args) = @_;
     print $fh sprintf $fmt, @args;
 }
@@ -21,7 +18,7 @@ Acme::fprintf - fprintf for Perl
 =head1 SYNOPSIS
 
   use Acme::fprintf;
-  fprintf $fh, '%04d %s', 31, 'yappo'; # 00031 yappo
+  fprintf $fh '%04d %s', 31, 'yappo'; # 00031 yappo
 
 =head1 DESCRIPTION
 

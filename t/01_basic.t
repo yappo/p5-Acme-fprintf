@@ -6,7 +6,7 @@ use Acme::fprintf;
 
 open my $fh, '>', \my $data;
 
-fprintf $fh, '%05d %s', 31, 'yappo';
+fprintf $fh '%05d %s', 31, 'yappo';
 
 is $data, '00031 yappo';
 
