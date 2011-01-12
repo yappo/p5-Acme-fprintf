@@ -1,16 +1,19 @@
 NAME
-    Acme::fprintf -
+    Acme::fprintf - fprintf for Perl
 
 SYNOPSIS
       use Acme::fprintf;
+      fprintf $fh, '%04d %s', 31, 'yappo'; # 00031 yappo
 
 DESCRIPTION
-    Acme::fprintf is
+    Acme::fprintf is fprintf(3) for Perl.
 
 AUTHOR
     Kazuhiro Osawa <yappo {at} shibuya {dot} pl>
 
 SEE ALSO
+    fprintf(3), perldoc -f sprintf
+
 LICENSE
     This library is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.
