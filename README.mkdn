@@ -17,7 +17,7 @@ Kazuhiro Osawa <yappo {at} shibuya {dot} pl>
 
 # SEE ALSO
 
-fprintf(3), perldoc -f sprintf
+fprintf(3), perldoc -f printf
 
 # LICENSE
 

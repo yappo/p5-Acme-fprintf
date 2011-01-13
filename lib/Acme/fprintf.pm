@@ -5,10 +5,11 @@ our $VERSION = '0.01';
 
 sub IO::Handle::fprintf {
     my($fh, $fmt, @args) = @_;
-    print $fh sprintf $fmt, @args;
+    CORE::printf $fh $fmt, @args;
 }
 
 1;
+
 __END__
 
 =head1 NAME
@@ -30,7 +31,7 @@ Kazuhiro Osawa E<lt>yappo {at} shibuya {dot} plE<gt>
 
 =head1 SEE ALSO
 
-fprintf(3), perldoc -f sprintf
+fprintf(3), perldoc -f printf
 
 =head1 LICENSE
 
