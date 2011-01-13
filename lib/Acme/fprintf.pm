@@ -19,7 +19,7 @@ Acme::fprintf - fprintf for Perl
 =head1 SYNOPSIS
 
   use Acme::fprintf;
-  fprintf $fh '%04d %s', 31, 'yappo'; # 00031 yappo
+  fprintf $fh '%05d %s', 31, 'yappo'; # 00031 yappo
 
 =head1 DESCRIPTION
 
